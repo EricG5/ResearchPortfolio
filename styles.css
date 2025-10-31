@@ -1238,3 +1238,53 @@ body:not(.light-theme) #contact .contact-item {
   box-shadow: inherit !important; /* keeps same shadow on hover */
 }
 
+/* ==== Stop hover "jump" in Publications (final override) ==== */
+
+/* 1) Freeze layout + visuals (both normal and hover) */
+#publications .publication-card,
+#publications .publication-card:hover,
+#publications .publication-card:focus,
+#publications .publication-card:focus-within {
+  transform: none !important;
+  translate: 0 !important;  /* modern logical transform */
+  scale: 1 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-width: 1px !important;       /* prevents border-thickness jump */
+  box-shadow: inherit !important;      /* same shadow on hover */
+  transition: none !important;         /* kill any animations */
+}
+
+/* 2) Also neutralize transforms on any child (images/video/icon wrappers, links, etc.) */
+#publications .publication-card *,
+#publications .publication-card *:hover,
+#publications .publication-card *:focus {
+  transform: none !important;
+  translate: 0 !important;
+  scale: 1 !important;
+  transition: none !important;
+}
+
+/* 3) Some themes apply hover on ancestor selectors; hard-stop those too */
+#publications .pub-media,
+#publications .pub-media:hover,
+#publications .pub-media img,
+#publications .pub-media img:hover,
+#publications .pub-media video,
+#publications .pub-media video:hover {
+  transform: none !important;
+  translate: 0 !important;
+  scale: 1 !important;
+  transition: none !important;
+}
+
+/* 4) If a link wraps the whole card somewhere in your CSS, freeze that as well */
+#publications a.publication-card,
+#publications a.publication-card:hover {
+  transform: none !important;
+  translate: 0 !important;
+  scale: 1 !important;
+  transition: none !important;
+}
+
+
