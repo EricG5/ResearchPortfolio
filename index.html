@@ -74,7 +74,7 @@
   </section>
 
   <!-- Publications Section -->
-    <section class="section" id="publications">
+<section class="section" id="publications">
   <div class="container">
     <div class="section-header scroll-up">
       <h2>Research &amp; Publications</h2>
@@ -85,52 +85,61 @@
 
     <div class="publications-list scroll-up">
 
-      <!-- Example 1 -->
+      <!-- Paper 1: Characterization -->
       <div class="publication-card">
-        <div class="pub-media">
-          <!-- Option 1: embedded MP4 -->
-          <video autoplay muted loop playsinline>
+        <div class="pub-media" aria-label="Characterization teaser video">
+          <video autoplay muted loop playsinline
+                 poster="assets/videos/characterization_poster.jpg" title="Characterization demo teaser">
             <source src="assets/videos/characterization.mp4" type="video/mp4">
+            <!-- Fallback image if video not supported -->
+            <img src="assets/videos/characterization_poster.jpg" alt="Characterization demo teaser">
           </video>
-
-          <!-- Option 2 (instead): YouTube embed -->
-          <!-- <iframe src="https://www.youtube.com/embed/XXXXXXX" 
-                   title="ETHOS demo video" allowfullscreen></iframe> -->
         </div>
 
         <div class="pub-content">
           <h3>Robotic Characterization of Markerless Hand-Tracking on Meta Quest Pro and Quest 3 Virtual Reality Headsets</h3>
-          <p class="publication-date">07 March 2025</p>
-          <p class="publication-authors">Eric Godden, William Steedman, & Matthew Pan</p>
+          <p class="publication-date">March 7, 2025</p>
+          <p class="publication-authors">Eric Godden, William Steedman, &amp; Matthew Pan</p>
           <p class="publication-abstract">
-            We propose an evaluation methodology that leverages a robotic manipulator to measure the positional accuracy, jitter, and latency of such systems and provides a standardized characterization framework of markerless hand-tracking. We apply this methodology to evaluate the hand-tracking performance of two recent mixed reality devices from Meta: the Quest Pro and Quest 3.
+            An evaluation methodology using a robotic manipulator to measure positional accuracy, jitter, and latency,
+            providing a standardized characterization framework for markerless hand-tracking on Quest Pro and Quest 3.
           </p>
           <p class="publication-links">
-            <a href="/papers/characterization/">Project page →</a>
-            <a href="/papers/characterization/static/paper.pdf" target="_blank">PDF</a>
-            <a href="https://github.com/your-username/ethos" target="_blank">Code</a>
-            <a href="/papers/ethos/static/bibtex.txt" target="_blank">BibTeX</a>
+            <a href="papers/characterization/">Project page →</a>
+            <a href="papers/characterization/static/paper.pdf" target="_blank" rel="noopener">PDF</a>
+            <a href="https://github.com/ericgodden/quest-handtracking-characterization" target="_blank" rel="noopener">Code</a>
+            <a href="papers/characterization/static/bibtex.txt" target="_blank" rel="noopener">BibTeX</a>
           </p>
         </div>
       </div>
 
-      <!-- Repeat for each paper -->
+      <!-- Paper 2: ETHOS -->
       <div class="publication-card">
-        <div class="pub-media">
-          <video autoplay muted loop playsinline>
+        <div class="pub-media" aria-label="ETHOS teaser video">
+          <video autoplay muted loop playsinline
+                 poster="assets/videos/ETHOS_poster.jpg" title="ETHOS demo teaser">
             <source src="assets/videos/ETHOS.mp4" type="video/mp4">
+            <img src="assets/videos/ETHOS_poster.jpg" alt="ETHOS demo teaser">
           </video>
+          <!-- Or YouTube embed (replace VIDEO_ID):
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID?mute=1&autoplay=1&loop=1&playlist=VIDEO_ID"
+                  title="ETHOS demo" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          -->
         </div>
+
         <div class="pub-content">
           <h3>ETHOS: A Robotic Encountered-Type Haptic Display for Social Interaction in Virtual Reality</h3>
           <p class="publication-date">ICRA 2026 (in review)</p>
-          <p class="publication-authors">Eric Godden, Jacquie Groenewegen, & Matthew Pan</p>
+          <p class="publication-authors">Eric Godden, Jacquie Groenewegen, &amp; Matthew Pan</p>
           <p class="publication-abstract">
-            We present ETHOS (Encountered-Type Haptics for On-demand Social interaction), a dynamic encountered-type haptic display (ETHD) that enables natural physical contact in virtual reality (VR) during social interactions such as handovers, fist bumps, and high-fives.
+            ETHOS (Encountered-Type Haptics for On-demand Social interaction) enables natural physical contact in VR
+            for social interactions like handovers, fist bumps, and high-fives.
           </p>
           <p class="publication-links">
-            <a href="/papers/ETHOS/">Project page →</a>
-            <a href="#">PDF</a> <a href="#">Code</a>
+            <a href="papers/ETHOS/">Project page →</a>
+            <a href="papers/ETHOS/static/paper.pdf" target="_blank" rel="noopener">PDF</a>
+            <a href="https://github.com/ericgodden/ethos" target="_blank" rel="noopener">Code</a>
+            <a href="papers/ETHOS/static/bibtex.txt" target="_blank" rel="noopener">BibTeX</a>
           </p>
         </div>
       </div>
@@ -138,7 +147,7 @@
     </div>
   </div>
 </section>
-
+  
   <!-- Education Section -->
   <section class="section" id="education">
     <div class="container">
