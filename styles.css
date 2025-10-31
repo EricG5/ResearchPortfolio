@@ -1224,3 +1224,17 @@ body:not(.light-theme) #contact .contact-item {
   background: rgba(255,255,255,0.06);
   border-color: rgba(255,255,255,0.14);
 }
+
+/* === Disable hover jump on publication cards === */
+.publication-card,
+#publications .publication-card {
+  transform: none !important;
+  transition: none !important;
+}
+
+.publication-card:hover,
+#publications .publication-card:hover {
+  transform: none !important;
+  box-shadow: inherit !important; /* keeps same shadow on hover */
+}
+
