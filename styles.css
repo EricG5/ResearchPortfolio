@@ -1167,3 +1167,60 @@ body:not(.light-theme) #publications .publication-links a { color: var(--pub-lin
   #publications .publication-card { flex-direction: column; }
 }
 
+/* === Contact section layout === */
+#contact .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap; /* makes it wrap on small screens */
+  margin-top: 2rem;
+}
+
+#contact .contact-item {
+  flex: 1 1 250px;
+  background: var(--card-bg, rgba(255,255,255,0.05));
+  border: 1px solid var(--card-border, rgba(255,255,255,0.1));
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#contact .contact-item:hover {
+  transform: translateY(-4px);
+  background: var(--card-bg-hover, rgba(255,255,255,0.1));
+}
+
+#contact .contact-item i {
+  font-size: 1.8rem;
+  color: var(--accent-color, #2563eb);
+  flex-shrink: 0;
+}
+
+#contact .contact-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#contact .contact-item p {
+  margin: 0.25rem 0 0;
+}
+
+#contact .contact-item a {
+  color: var(--accent-color, #2563eb);
+  text-decoration: none;
+}
+
+#contact .contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode (if your site uses body.light-theme toggle) */
+body:not(.light-theme) #contact .contact-item {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.14);
+}
