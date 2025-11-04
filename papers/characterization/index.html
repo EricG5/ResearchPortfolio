@@ -378,7 +378,7 @@
         <!-- Short description -->
         <div class="content has-text-justified">
           <p>
-            Our experimental setup integrates a KUKA LBR iiwa 7 R800 robot manipulator, a virtual reality headset, an external ground-truth motion capture system, and a custom hand model with embedded retroflective markers. This enables systematic and repeatable evaluation of the markerless hand-tracking embedded within commercial virtual reality headsets.
+            Our experimental setup integrates a KUKA LBR iiwa 7 R800 robot manipulator, a virtual reality headset (both Meta Quest Pro and Quest 3 within the following tests), a motion capture system serving as the ground-truth, and a custom hand model with embedded retroflective markers. This enables systematic and repeatable evaluation of the markerless hand-tracking embedded within commercial virtual reality headsets.
           </p>
         </div>
 
@@ -399,46 +399,155 @@
 <!-- End System Section -->
 
 
+    <!-- Test 1: Static Performance -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+        <!-- Section Title -->
+        <h2 class="title is-3 has-text-centered">Test 1: Static Performance</h2>
+
+        <!-- Brief description -->
+        <div class="content has-text-justified">
+          <p>
+            This test evaluates hand-tracking accuracy under static conditions, isolating measurement performance from the effects of latency. In this configuration, the hand remains stationary between frames, providing the optimal tracking scenario—free from temporal variation—and presenting a consistent view to the HMD cameras. This stability simplifies the identification process within the tracking algorithm.
+
+            The evaluation workspace consisted of 147 test points: seven planar positions across three vertical levels, each combined with seven hand rotations. Both headsets were assessed using two anatomical reference modes, tracking centered on either the index knuckle or the index fingertip. At each unique point, two metrics were computed: the average Euclidean error, quantifying spatial deviation, and the sample-to-sample jitter, representing temporal noise within the tracking data.
+
+            Regarding positional accuracy, in best-performing conditions, the Quest Pro outperformed the Quest 3 with 1.22 cm of average error compared to 1.73 cm. The opposite result was true concerning jitter, with results of 1.77 cm and 1.11 cm for the Quest Pro and Quest 3, respectively
+            
+          </p>
+        </div>
+
+        <!-- Grid A -->
+        <h3 class="title is-4" style="margin-top:1.25rem;">Euclidean Error Results</h3>
+        <div class="columns is-multiline is-variable is-4">
+          <!-- Item 1 -->
+          <div class="column is-6">
+            <div class="grid-figure">
+              <h4 class="subtitle is-6 has-text-weight-semibold">Error Distribution</h4>
+              <figure class="image">
+                <img src="static/images/Q3TipError_page-0001.jpg"
+                     alt="Quest Pro static test: error distribution across sample points" loading="lazy"
+                     style="border-radius:12px;">
+              </figure>
+              <p class="is-size-7 has-text-grey">
+                Quest 3 Index Tip
+              </p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="column is-6">
+            <div class="grid-figure">
+              <h4 class="subtitle is-6 has-text-weight-semibold">Mean Error vs Distance</h4>
+              <figure class="image">
+                <img src="static/images/Q3KnuckleError_page-0001.jpg"
+                     alt="Quest Pro static test: mean error as a function of headset distance" loading="lazy"
+                     style="border-radius:12px;">
+              </figure>
+              <p class="is-size-7 has-text-grey">
+                Quest 3 Index Knuckle
+              </p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="column is-6">
+            <div class="grid-figure">
+              <h4 class="subtitle is-6 has-text-weight-semibold">Joint Comparison</h4>
+              <figure class="image">
+                <img src="static/images/QProTipError_page-0001.jpg"
+                     alt="Quest Pro static test: fingertip vs knuckle tracking error" loading="lazy"
+                     style="border-radius:12px;">
+              </figure>
+              <p class="is-size-7 has-text-grey">
+                Quest Pro Index Tip
+              </p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="column is-6">
+            <div class="grid-figure">
+              <h4 class="subtitle is-6 has-text-weight-semibold">Spatial Heatmap</h4>
+              <figure class="image">
+                <img src="static/images/QProKnuckleError_page-0001.jpg"
+                     alt="Quest Pro static test: heatmap of positional deviation across workspace" loading="lazy"
+                     style="border-radius:12px;">
+              </figure>
+              <p class="is-size-7 has-text-grey">
+                Quest Pro Index Knuckle
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid B -->
+        <h3 class="title is-4" style="margin-top:1.25rem;">Jitter Results</h3>
+        <div class="columns is-multiline is-variable is-4">
+          <!-- Item 1 -->
+          <div class="column is-6">
+            <div class="grid-figure">
+              <h4 class="subtitle is-6 has-text-weight-semibold">Error Distribution</h4>
+              <figure class="image">
+                <img src="static/images/Q3TipJitter_page-0001.jpg"
+                     alt="Quest 3 static test: error distribution across sample points" loading="lazy"
+                     style="border-radius:12px;">
+              </figure>
+              <p class="is-size-7 has-text-grey">
+                Quest 3 Index Tip
+              </p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="column is-6">
+            <div class="grid-figure">
+              <h4 class="subtitle is-6 has-text-weight-semibold">Mean Error vs Distance</h4>
+              <figure class="image">
+                <img src="static/images/Q3KnuckleJitter_page-0001.jpg"
+                     alt="Quest 3 static test: mean error vs distance from headset" loading="lazy"
+                     style="border-radius:12px;">
+              </figure>
+              <p class="is-size-7 has-text-grey">
+                Quest 3 Index Knuckle
+              </p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="column is-6">
+            <div class="grid-figure">
+              <h4 class="subtitle is-6 has-text-weight-semibold">Joint Comparison</h4>
+              <figure class="image">
+                <img src="static/images/QProTipJitter.jpg"
+                     alt="Quest 3 static test: fingertip vs knuckle tracking error" loading="lazy"
+                     style="border-radius:12px;">
+              </figure>
+              <p class="is-size-7 has-text-grey">
+                Quest Pro Index Tip
+              </p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="column is-6">
+            <div class="grid-figure">
+              <h4 class="subtitle is-6 has-text-weight-semibold">Spatial Heatmap</h4>
+              <figure class="image">
+                <img src="static/images/QProKnuckleJitter_page-0001.jpg"
+                     alt="Quest 3 static test: heatmap of positional deviation across workspace" loading="lazy"
+                     style="border-radius:12px;">
+              </figure>
+              <p class="is-size-7 has-text-grey">
+                Quest Pro Index Knuckle
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+
+
 
 
 
