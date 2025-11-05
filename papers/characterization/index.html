@@ -783,5 +783,28 @@
 
     <!-- End of Statcounter Code -->
 
+    
+
+
+  <!-- Carousel Initialization Fix -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.bulmaCarousel) {
+        const opts = {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          loop: true,
+          autoplay: false,
+          navigation: true,
+          pagination: true,
+          breakpoints: [] // prevent responsive overrides changing slidesToShow
+        };
+        bulmaCarousel.attach('#carousel-error', opts);
+        bulmaCarousel.attach('#carousel-jitter', opts);
+      }
+    });
+  </script>
+
+
   </body>
   </html>
