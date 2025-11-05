@@ -413,7 +413,7 @@
           <p>
             This test evaluates hand-tracking accuracy under static conditions, isolating measurement performance from the effects of latency. In this configuration, the hand remains stationary between frames, providing the optimal tracking scenario—free from temporal variation—and presenting a consistent view to the HMD cameras. This stability simplifies the identification process within the tracking algorithm.
 
-            The evaluation workspace consisted of 147 test points: seven planar positions across three vertical levels, each combined with seven hand rotations. Both headsets were assessed using two anatomical reference modes, tracking centered on either the index knuckle or the index fingertip. At each unique point, two metrics were computed: the average Euclidean error, quantifying spatial deviation, and the sample-to-sample jitter, representing temporal noise within the tracking data.
+            The evaluation workspace consisted of 147 test points: seven planar positions across three vertical levels, each combined with seven hand rotations. Both headsets were assessed using two anatomical reference modes, tracking centered on either the index knuckle or the index fingertip. At each unique point, two metrics were computed: the average <strong><em>Euclidean error</em></strong>, quantifying spatial deviation, and the sample-to-sample <strong><em>jitter</em></strong>, representing temporal noise within the tracking data.
 
             Regarding positional accuracy, in best-performing conditions, the Quest Pro outperformed the Quest 3 with 1.22 cm of average error compared to 1.73 cm. The opposite result was true concerning jitter, with results of 1.77 cm and 1.11 cm for the Quest Pro and Quest 3, respectively.
           </p>
@@ -539,6 +539,63 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Test 2: Dynamic Performance -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <!-- Section Title -->
+        <h2 class="title is-3 has-text-centered">Test 2: Dynamic Performance</h2>
+
+        <!-- Brief description -->
+        <div class="content has-text-justified">
+          <p>
+            The second test evaluates tracking performance under dynamic conditions to evaluate the latency of the markerless hand-tracking. Latency refers to the time delay between ground-truth motion and when that corresponding motion is detected by the measurement system.
+            12 constant-velocity trajectories were defined across a 3D testing volume enabling the comparison of tracking data to ground truth measurements while the tracking target is in motion. 
+            This test will produce three metrics to provide a complete evaluation of hand-tracking performance across an entire motion: cold-start latency, motion prediction “warm-up" duration, and constant-velocity. <strong><em>Cold-start latency</em></strong> refers to the time delay of the onset of motion.
+            <strong><em>Warm-up duration</em></strong> measures the time delay for the motion predicition within the algorithm to take full effect.
+            <strong><em>Constant-velocity latency</em></strong> refers to the average latency within the trajectory after the motion prediction has taken full effect.
+          </p>
+        </div>
+
+        <!-- Two figures side by side -->
+        <div class="columns is-variable is-6 is-multiline" style="margin-top: 1.5rem;">
+        
+          <!-- Figure 1 -->
+          <div class="column is-6 has-text-centered">
+            <figure class="image">
+              <img src="static/images/Test2_CS_page-0001.jpg"
+                   alt="Latency analysis plot comparing ground truth and tracked motion"
+                   style="border-radius:12px; max-width:100%; height:auto;">
+            </figure>
+            <p class="is-size-7 has-text-centered" style="color:#000; margin-top:.5rem;">
+              VR hand-tracking vs. ground-truth across linear trajectory with marked motion onset points used for cold-start latency analysis.
+            </p>
+          </div>
+        
+          <!-- Figure 2 -->
+          <div class="column is-6 has-text-centered">
+            <figure class="image">
+              <img src="static/images/Test2_Lat_page-0001.jpg"
+                   alt="Latency warm-up duration visualization for different velocities"
+                   style="border-radius:12px; max-width:100%; height:auto;">
+            </figure>
+            <p class="is-size-7 has-text-centered" style="color:#000; margin-top:.5rem;">
+              Development of tracking performance (latency [ms]) across linear trajectory.
+            </p>
+          </div>
+        
+        </div>
+        <!-- End two-figure row -->
+
+
+        
       </div>
     </div>
   </div>
