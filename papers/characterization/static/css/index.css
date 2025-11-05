@@ -749,5 +749,31 @@ a:focus {
   }
 }
 
+/* Keep each slide exactly the full width */
+.results-carousel { overflow: hidden; }
+.results-carousel .item { 
+  width: 100% !important; 
+  margin: 0 !important; 
+  padding: 0 !important; 
+  box-sizing: border-box;
+}
+
+/* Remove default figure spacing that can throw width calc off */
+.results-carousel .item figure { margin: 0; }
+
+/* Images fill their slide consistently */
+.results-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Captions consistent and not adding horizontal overflow */
+.results-carousel .item p {
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+
 
 
