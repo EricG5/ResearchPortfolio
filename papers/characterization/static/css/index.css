@@ -862,3 +862,23 @@ a:focus {
   color: #000;
 }
 
+/* Smooth carousel behavior without breaking layout */
+.results-carousel { overflow: hidden; }
+
+.results-carousel .item figure { margin: 0; }
+.results-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.results-carousel .item p {
+  margin-top: .75rem;
+  text-align: center;
+  color: #000;
+}
+
+/* Tiny spacing so dots don't touch the caption */
+.carousel .carousel-pagination { bottom: .5rem; }
+
+
