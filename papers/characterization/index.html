@@ -783,7 +783,39 @@
 
     <!-- End of Statcounter Code -->
 
-    
+    <!-- Carousel Initialization -->
+<script>
+(function () {
+  function initCarousels() {
+    if (!window.bulmaCarousel) return;
+
+    // Destroy if pre-initialized
+    try { (bulmaCarousel.getAll() || []).forEach(c => c.destroy()); } catch(e) {}
+
+    // Attach both with consistent options
+    const opts = {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      loop: true,
+      autoplay: false,
+      navigation: true,
+      pagination: true,
+      breakpoints: {}
+    };
+
+    bulmaCarousel.attach('#carousel-error', opts);
+    bulmaCarousel.attach('#carousel-jitter', opts);
+  }
+
+  // Run now or when DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCarousels);
+  } else {
+    initCarousels();
+  }
+})();
+</script>
+
 
 
 
