@@ -403,7 +403,7 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
+      <div class="column">
 
         <!-- Section Title -->
         <h2 class="title is-3 has-text-centered">Test 1: Static Performance</h2>
@@ -547,7 +547,7 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
+      <div class="column">
 
         <!-- Section Title -->
         <h2 class="title is-3 has-text-centered">Test 2: Dynamic Performance</h2>
@@ -593,6 +593,45 @@
         </div>
         <!-- End two-figure row -->
 
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Test 3: Motion-to-Photon Latency -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+
+        <!-- Section Title -->
+        <h2 class="title is-3 has-text-centered">Test 3: Motion-to-Photon Latency</h2>
+
+        <!-- Brief description -->
+        <div class="content has-text-justified">
+          <p>
+            While the first two tests provide an in-depth evaluation of hand-tracking performance across static and dynamic conditions, another key delay to consider within VR systems is the motion-to-photon latency. <strong><em>Motion-to-Photon latency</em></strong> encompasses the delay between user motion and when that motion is displayed on the headset to evaluate the visualization ability of the headset. Assessing this metric is crucial, as motion-to-photon latency integrates the hardware and software performance of the headset into a single measure. This test was completed using the same trajectories as the second test.
+            The tests produced motion-to-photon latency values of 33.20&plusmn;18.01 and 38.33&plusmn;31.29 for the Meta Quest Pro and Quest 3, respectively.
+          </p>
+        </div>
+
+        <!-- Embedded video -->
+        <div class="hero is-small">
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <video controls autoplay muted loop preload="metadata"
+                     style="max-width:100%; border-radius:12px;">
+                <source src="static/videos/DynamicTrajectories.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="is-size-7 has-text-centered" style="color:#000; margin-top:.5rem;">
+                Examples of constant-velocity trajectories used in Test 2 and Test 3.
+              </p>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
