@@ -403,7 +403,7 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column">
+      <div class="column is-four-fifths">
 
         <!-- Section Title -->
         <h2 class="title is-3 has-text-centered">Test 1: Static Performance</h2>
@@ -423,7 +423,7 @@
         <h3 class="title is-4" style="margin-top:1.25rem;">Euclidean Error Results</h3>
         <div class="hero is-small">
           <div class="hero-body">
-            <div class="container">
+            <div class="container is-max-desktop">
               <div id="carousel-error" class="carousel results-carousel">
                 
                 <!-- Slide 1 -->
@@ -483,7 +483,7 @@
         <h3 class="title is-4" style="margin-top:1.25rem;">Jitter Results</h3>
         <div class="hero is-small">
           <div class="hero-body">
-            <div class="container">
+            <div class="container is-max-desktop">
               <div id="carousel-jitter" class="carousel results-carousel">
                 
                 <!-- Slide 1 -->
@@ -613,7 +613,7 @@
         <div class="content has-text-justified">
           <p>
             While the first two tests provide an in-depth evaluation of hand-tracking performance across static and dynamic conditions, another key delay to consider within VR systems is the motion-to-photon latency. <strong><em>Motion-to-Photon latency</em></strong> encompasses the delay between user motion and when that motion is displayed on the headset to evaluate the visualization ability of the headset. Assessing this metric is crucial, as motion-to-photon latency integrates the hardware and software performance of the headset into a single measure. This test was completed using the same trajectories as the second test.
-            The tests produced motion-to-photon latency values of 33.20&plusmn;18.01 and 38.33&plusmn;31.29 for the Meta Quest Pro and Quest 3, respectively.
+            The tests produced motion-to-photon latency values of 33.20&plusmn;18.01 ms and 38.33&plusmn;31.29 ms for the Meta Quest Pro and Quest 3, respectively.
           </p>
         </div>
 
@@ -638,7 +638,21 @@
   </div>
 </section>
 
-
+<!-- Conclusion -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Conclusion</h2>
+        <div class="content has-text-justified">
+          <p>
+            While implementing hand-tracking in virtual experiences is an important step forward, consistent and ongoing evaluations are necessary to properly characterize and document the progress of this technology for applications requiring accurate and precise hand pose data. This has motivated us to develop a repeatable and extensible process of markerless hand-tracking characterization within this work to not only facilitate the evaluation of current commercial headsets but also to lay the foundation for future testing and comparison.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
