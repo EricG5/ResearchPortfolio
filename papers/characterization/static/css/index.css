@@ -817,3 +817,48 @@ a:focus {
   .results-carousel .item img    { max-height: 70vh; object-fit: contain; }
 }
 
+/* Put pagination in normal flow under the slide */
+.carousel .carousel-pagination {
+  position: static !important;   /* take it out of absolute positioning */
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: .5rem;             /* space between caption and dots */
+}
+
+/* No extra bottom padding needed on the carousel anymore */
+.results-carousel { padding-bottom: 0 !important; }
+
+
+/* Prevent any horizontal overflow/peeking */
+.results-carousel,
+.results-carousel .carousel-container {
+  overflow: hidden;
+}
+
+/* Force each slide to occupy 100% of the viewport width the carousel gets */
+.results-carousel .carousel-item,
+.results-carousel .item {
+  flex: 0 0 100% !important;   /* exactly one slide per frame */
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Images: don’t stretch */
+.results-carousel .item figure { margin: 0; width: 100%; }
+.results-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Captions: centered and away from the slide bottom */
+.results-carousel .item p {
+  margin: 0.75rem 0 0;
+  text-align: center;
+  color: #000;
+}
+
