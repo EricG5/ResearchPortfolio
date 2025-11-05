@@ -398,88 +398,85 @@
 </section>
 <!-- End System Section -->
 
+    <!-- Test 1: Static Performance -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+    
+            <!-- Section Title -->
+            <h2 class="title is-3 has-text-centered">Test 1: Static Performance</h2>
+    
+            <!-- Brief description -->
+            <div class="content has-text-justified">
+              <p>
+                This test evaluates hand-tracking accuracy under static conditions, isolating measurement performance from the effects of latency. In this configuration, the hand remains stationary between frames, providing the optimal tracking scenario—free from temporal variation—and presenting a consistent view to the HMD cameras. This stability simplifies the identification process within the tracking algorithm.
 
-<!-- Test 1: Static Performance -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column">
+                The evaluation workspace consisted of 147 test points: seven planar positions across three vertical levels, each combined with seven hand rotations. Both headsets were assessed using two anatomical reference modes, tracking centered on either the index knuckle or the index fingertip. At each unique point, two metrics were computed: the average <strong><em>Euclidean error</em></strong>, quantifying spatial deviation, and the sample-to-sample <strong><em>jitter</em></strong>, representing temporal noise within the tracking data.
 
-        <!-- Section Title -->
-        <h2 class="title is-3 has-text-centered">Test 1: Static Performance</h2>
-
-        <!-- Brief description -->
-        <div class="content has-text-justified">
-          <p>
-            This test evaluates hand-tracking accuracy under static conditions, isolating measurement performance from the effects of latency. In this configuration, the hand remains stationary between frames, providing the optimal tracking scenario—free from temporal variation—and presenting a consistent view to the HMD cameras. This stability simplifies the identification process within the tracking algorithm.
-
-            The evaluation workspace consisted of 147 test points: seven planar positions across three vertical levels, each combined with seven hand rotations. Both headsets were assessed using two anatomical reference modes, tracking centered on either the index knuckle or the index fingertip. At each unique point, two metrics were computed: the average <strong><em>Euclidean error</em></strong>, quantifying spatial deviation, and the sample-to-sample <strong><em>jitter</em></strong>, representing temporal noise within the tracking data.
-
-            Regarding positional accuracy, in best-performing conditions, the Quest Pro outperformed the Quest 3 with 1.22 cm of average error compared to 1.73 cm. The opposite result was true concerning jitter, with results of 1.77 cm and 1.11 cm for the Quest Pro and Quest 3, respectively.
-          </p>
-        </div>
-
-        <!-- Carousel A -->
-        <h3 class="title is-4" style="margin-top:1.25rem;">Euclidean Error Results</h3>
-        <div class="hero is-small">
-          <div class="hero-body">
-            <div class="container">
-              <div class="carousel results-carousel" id="carousel-error">
-                <div class="item">
-                  <img src="static/images/Q3TipError_page-0001.jpg" alt="Quest 3 — Index Tip (Euclidean error)">
-                  <h2 class="subtitle has-text-centered caption"><strong>Quest 3 — Index Tip</strong></h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/Q3KnuckleError_page-0001.jpg" alt="Quest 3 — Index Knuckle (Euclidean error)">
-                  <h2 class="subtitle has-text-centered caption"><strong>Quest 3 — Index Knuckle</strong></h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/QProTipError_page-0001.jpg" alt="Quest Pro — Index Tip (Euclidean error)">
-                  <h2 class="subtitle has-text-centered caption"><strong>Quest Pro — Index Tip</strong></h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/QProKnuckleError_page-0001.jpg" alt="Quest Pro — Index Knuckle (Euclidean error)">
-                  <h2 class="subtitle has-text-centered caption"><strong>Quest Pro — Index Knuckle</strong></h2>
+                Regarding positional accuracy, in best-performing conditions, the Quest Pro outperformed the Quest 3 with 1.22 cm of average error compared to 1.73 cm. The opposite result was true concerning jitter, with results of 1.77 cm and 1.11 cm for the Quest Pro and Quest 3, respectively.
+              </p>
+            </div>
+    
+            <!-- Carousel A -->
+            <h3 class="title is-4" style="margin-top:1.25rem;">Euclidean Error Results</h3>
+            <div class="hero is-small">
+              <div class="hero-body">
+                <div class="container is-max-desktop"><!-- CHANGED -->
+                  <div class="carousel results-carousel" id="carousel-error">
+                    <div class="item">
+                      <div class="carousel-frame"><img src="static/images/Q3TipError_page-0001.jpg" alt="Quest 3 — Index Tip (Euclidean error)"></div>
+                      <h2 class="subtitle has-text-centered caption"><strong>Quest 3 — Index Tip</strong></h2>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-frame"><img src="static/images/Q3KnuckleError_page-0001.jpg" alt="Quest 3 — Index Knuckle (Euclidean error)"></div>
+                      <h2 class="subtitle has-text-centered caption"><strong>Quest 3 — Index Knuckle</strong></h2>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-frame"><img src="static/images/QProTipError_page-0001.jpg" alt="Quest Pro — Index Tip (Euclidean error)"></div>
+                      <h2 class="subtitle has-text-centered caption"><strong>Quest Pro — Index Tip</strong></h2>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-frame"><img src="static/images/QProKnuckleError_page-0001.jpg" alt="Quest Pro — Index Knuckle (Euclidean error)"></div>
+                      <h2 class="subtitle has-text-centered caption"><strong>Quest Pro — Index Knuckle</strong></h2>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-
-        <!-- Carousel B -->
-        <h3 class="title is-4" style="margin-top:1.25rem;">Jitter Results</h3>
-        <div class="hero is-small">
-          <div class="hero-body">
-            <div class="container">
-              <div class="carousel results-carousel" id="carousel-jitter">
-                <div class="item">
-                  <img src="static/images/Q3TipJitter_page-0001.jpg" alt="Quest 3 — Index Tip (jitter)">
-                  <h2 class="subtitle has-text-centered caption"><strong>Quest 3 — Index Tip</strong></h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/Q3KnuckleJitter_page-0001.jpg" alt="Quest 3 — Index Knuckle (jitter)">
-                  <h2 class="subtitle has-text-centered caption"><strong>Quest 3 — Index Knuckle</strong></h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/QProTipJitter.jpg" alt="Quest Pro — Index Tip (jitter)">
-                  <h2 class="subtitle has-text-centered caption"><strong>Quest Pro — Index Tip</strong></h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/QProKnuckleJitter_page-0001.jpg" alt="Quest Pro — Index Knuckle (jitter)">
-                  <h2 class="subtitle has-text-centered caption"><strong>Quest Pro — Index Knuckle</strong></h2>
+    
+            <!-- Carousel B -->
+            <h3 class="title is-4" style="margin-top:1.25rem;">Jitter Results</h3>
+            <div class="hero is-small">
+              <div class="hero-body">
+                <div class="container is-max-desktop"><!-- CHANGED -->
+                  <div class="carousel results-carousel" id="carousel-jitter">
+                    <div class="item">
+                      <div class="carousel-frame"><img src="static/images/Q3TipJitter_page-0001.jpg" alt="Quest 3 — Index Tip (jitter)"></div>
+                      <h2 class="subtitle has-text-centered caption"><strong>Quest 3 — Index Tip</strong></h2>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-frame"><img src="static/images/Q3KnuckleJitter_page-0001.jpg" alt="Quest 3 — Index Knuckle (jitter)"></div>
+                      <h2 class="subtitle has-text-centered caption"><strong>Quest 3 — Index Knuckle</strong></h2>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-frame"><img src="static/images/QProTipJitter.jpg" alt="Quest Pro — Index Tip (jitter)"></div>
+                      <h2 class="subtitle has-text-centered caption"><strong>Quest Pro — Index Tip</strong></h2>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-frame"><img src="static/images/QProKnuckleJitter_page-0001.jpg" alt="Quest Pro — Index Knuckle (jitter)"></div>
+                      <h2 class="subtitle has-text-centered caption"><strong>Quest Pro — Index Knuckle</strong></h2>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+    
           </div>
         </div>
-
-
-        
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
 
 <!-- Test 2: Dynamic Performance -->
 <section class="section hero is-light">
