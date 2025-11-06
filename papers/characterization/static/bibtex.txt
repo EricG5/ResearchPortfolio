@@ -1,0 +1,10 @@
+@ARTICLE{10916819,
+  author={Godden, Eric and Steedman, William and Pan, Matthew K.X.J.},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={Robotic Characterization of Markerless Hand-Tracking on Meta Quest Pro and Quest 3 Virtual Reality Headsets}, 
+  year={2025},
+  volume={31},
+  number={5},
+  pages={3025-3034},
+  keywords={Hands;Tracking;Robots;Testing;Manipulators;Accuracy;Performance evaluation;Virtual environments;Jitter;Virtual reality;Hand-tracking;robotics;tracking performance;characterization;virtual reality;head-mounted display},
+  doi={10.1109/TVCG.2025.3549182}}
