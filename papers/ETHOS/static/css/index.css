@@ -757,6 +757,35 @@ a:focus {
   display: block;
 }
 
+.video-bg {
+  background-color: #273846;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* The video itself */
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+
+  /* White border + subtle shadow */
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+
+  /* Offset effect (adds breathing room around video) */
+  background-color: #ffffff10; /* faint glow behind video */
+  padding: 4px;
+}
+
+/* Optional: tighter layout control */
+.video-bg .columns {
+  margin: 0;
+}
+
 
 
 
