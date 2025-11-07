@@ -460,28 +460,32 @@
         <!-- Subsection title -->
         <h3 class="title is-4 mt-4">Spatial Alignment</h3>
     
-        <!-- Two videos side by side -->
-        <div class="columns is-variable is-6 is-vcentered">
-          <div class="column">
-            <video class="video-frame" autoplay loop muted playsinline>
-              <source src="static/videos/vrColocation.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-    
-          <div class="column">
-            <video class="video-frame" autoplay loop muted playsinline>
-              <source src="static/videos/realColocation.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+        <!-- Wider container for videos -->
+        <div class="container is-max-widescreen">
+          <div class="columns is-variable is-6 is-vcentered">
+            <div class="column">
+              <video class="video-frame" autoplay loop muted playsinline>
+                <source src="static/videos/vrColocation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+        
+            <div class="column">
+              <video class="video-frame" autoplay loop muted playsinline>
+                <source src="static/videos/realColocation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
-    
-        <!-- Full-width text under both videos -->
-        <div class="content has-text-justified mt-3">
-          <p>
-            <b>Spatial alignment</b> between virtual and physical worlds was determined to be <b>5.09 ± 0.94 mm</b>, below discernible thresholds.
-          </p>
+        
+        <!-- Narrower container for text -->
+        <div class="container is-max-desktop">
+          <div class="content has-text-justified mt-3">
+            <p>
+              <b>Spatial alignment</b> between virtual and physical worlds was determined to be <b>5.09 ± 0.94 mm</b>, below discernible thresholds.
+            </p>
+          </div>
         </div>
 
         <!-- <figure class="image" style="margin-top: 1.5rem;">
