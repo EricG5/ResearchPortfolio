@@ -749,5 +749,14 @@ a:focus {
   }
 }
 
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover; /* or "contain" if you prefer full-frame */
+  border-radius: 10px;
+  display: block;
+}
+
+
 
 
