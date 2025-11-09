@@ -1287,4 +1287,16 @@ body:not(.light-theme) #contact .contact-item {
   transition: none !important;
 }
 
+<style>
+.pub-media video {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* ensures no part of the video is cut off */
+  border-radius: 10px; /* optional */
+  display: block;
+  max-height: 80vh; /* prevents it from getting too tall */
+  margin: 0 auto;
+}
+</style>
+
 
