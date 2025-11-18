@@ -454,75 +454,113 @@
 
         <div class="content has-text-justified">
           <p>
-            To evaluate the colocation between the virtual and physical interactions, two metrics were evaluated. The first, <b>spatial alignment</b>, evaluates the performance of our fiducial-based registration approach by comparing the stationary virtual-physical alignment to a ground-truth motion capture system. The second metric, <b>interaction latency</b>, characterizes the time difference between a physical and corresponding virtual event to evaluate the impact of delay on interaction efficacy.
+            The three physicality conditions allowed us to evaluate social–physical interactions across increasing levels of embodiment. Results demonstrate a clear improvement in experience from the virtual baseline (NP) to both static and dynamic physicality conditions. However, the comparison between static and dynamic physicality revealed only partial and inconsistent gains, suggesting that the integration of motion and impact warrants further refinement.
+            Comfort scores did not differ significantly across physicality conditions, and practical equivalence could not be established through TOST analysis. These findings suggest that comfort remained broadly consistent across interaction types, though subtle differences cannot be ruled out.
+            Across object handover, fist bump, and high five, interaction type had no main effect on presence, enjoyability, comfort, or avatar connection. This generalization suggests ETHOS is broadly applicable to short, socially meaningful gestures.
+            
           </p>
         </div>
 
         <!-- Subsection title -->
-        <h3 class="title is-4 mt-4">Spatial Alignment</h3>
-    
-        <!-- Wider container for videos -->
+        <h3 class="title is-4 mt-4">Presence</h3>
+
+        <!-- Wider container for 2x2 image grid -->
         <div class="container is-max-widescreen">
           <div
             class="video-bg"
             style="background-color: #273846; border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem;"
           >
-          <div class="columns is-variable is-6 is-vcentered">
-            <div class="column">
-              <video class="video-frame" autoplay loop muted playsinline>
-                <source src="static/videos/vrColocation.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-        
-            <div class="column">
-              <video class="video-frame" autoplay loop muted playsinline>
-                <source src="static/videos/realColocation.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div class="columns is-multiline is-variable is-6 is-vcentered has-text-centered">
+
+              <!-- Top-left image -->
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/TotalViolin.jpg"
+                       alt="Total presence ratings across conditions"
+                       style="border-radius: 8px;">
+                  <figcaption class="has-text-grey-light mt-2 is-size-7">
+                    (a) Total Presence
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Top-right image -->
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/PhysicalViolin.jpg"
+                       alt="Physical presence ratings across conditions"
+                       style="border-radius: 8px;">
+                  <figcaption class="has-text-grey-light mt-2 is-size-7">
+                    (b) Physical Presence
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Bottom-left image -->
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/SocialViolin.jpg"
+                       alt="Self-presence ratings across conditions"
+                       style="border-radius: 8px;">
+                  <figcaption class="has-text-grey-light mt-2 is-size-7">
+                    (c) Social Presence
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Bottom-right image -->
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/SelfViolin.jpg"
+                       alt="Overall presence ratings across conditions"
+                       style="border-radius: 8px;">
+                  <figcaption class="has-text-grey-light mt-2 is-size-7">
+                    (d) Self Presence
+                  </figcaption>
+                </figure>
+              </div>
+
             </div>
           </div>
         </div>
-        
-        <!-- Narrower container for text -->
+
+        <!-- Narrower container for full caption -->
         <div class="container is-max-desktop">
           <div class="content has-text-justified mt-3">
             <p>
-              <b>Spatial alignment</b> between virtual and physical worlds was determined to be <b>5.09 ± 0.94 mm</b>, below discernible thresholds.
+              <b>Presence.</b> results visualized across physicality conditions—no physicality, static physicality, and dynamic physicality—for the Multimodal Presence Scale (Makransky 2017): (a) total presence, (b) physical presence, (c) social presence, and (d) self-presence. Significant between-condition differences are annotated (* p<0.05, *** p<0.001).
+            </p>
+          </div>
+        </div>
+
+        <!-- Subsection title -->
+        <h3 class="title is-4 mt-4">Secondary Metrics</h3>
+
+        <!-- Wider container for single figure -->
+        <div class="container is-max-widescreen">
+          <div
+            class="video-bg"
+            style="background-color: #273846; border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem;"
+          >
+            <figure class="image has-text-centered">
+              <img src="static/images/secondaryMetrics.jpg"
+                   alt="Secondary metrics such as enjoyment, comfort, and connection"
+                   style="border-radius: 8px; max-width: 100%; height: auto;">
+            </figure>
+          </div>
+        </div>
+
+        <!-- Narrower container for full caption -->
+        <div class="container is-max-desktop">
+          <div class="content has-text-justified mt-3">
+            <p>
+              <b>Secondary metrics.</b> Mean ratings of realism, enjoyability, comfort, and character connection across the three physicality conditions (no physicality, static, dynamic). Error bars represent ± standard error of the mean (SEM).
             </p>
           </div>
         </div>
 
       </div>
 
-        <!-- Subsection title -->
-        <h3 class="title is-4 mt-4">Interaction Latency</h3>
-    
-        <!-- Wider container for single video -->
-        <div class="container is-max-widescreen">
-          <div
-            class="video-bg"
-            style="background-color: #273846; border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem;"
-          >
-            <div class="columns is-centered">
-              <div class="column is-10">
-                <video class="video-frame" autoplay loop muted playsinline>
-                  <source src="static/videos/HighFive.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Narrower container for text -->
-        <div class="container is-max-desktop">
-          <div class="content has-text-justified mt-3">
-            <p>
-              <b>Interaction latency</b> between virtual and physical contact was determined to be on average <b>28.58 ± 31.21&nbsp;ms</b>, remaining below perceptual thresholds.
-            </p>
-          </div>
-        </div>
 
 
       </div>
@@ -539,8 +577,9 @@
         <h2 class="title is-3">Conclusion</h2>
         <div class="content has-text-justified">
           <p>
-            In this work, we introduced ETHOS (Encountered-Type Haptics for On-demand Social interaction), extending the capabilities of ETHDs beyond static props toward dynamic, socially meaningful contact in VR. By equipping a torque-controlled manipulator with customized physical props, we realized novel interpersonal interactions—handover, fist bump, and high five—that are intuitive, repeatable, and grounded in everyday social behaviour.
-            The results in this work provide the first quantitative evidence that high-fidelity interpersonal interactions are feasible in VR through an ETHD framework.
+            This work presented the first experiential evaluation of ETHOS (Encountered-Type Haptics for On-demand Social interaction), advancing encountered-type haptics from inert object rendering to socially meaningful interactions with virtual characters. Through a 55-participant study of object handovers, fist bumps, and high fives across no, static, and dynamic physicality conditions, we provide the first evidence of how physical contact shapes social–physical HRI in VR.
+            The findings are clear: purely virtual baselines fail to sustain believable engagement, while even static prop alignment substantially enhances presence, realism, enjoyability, and connection to the virtual character. Dynamic rendering offers additional gains in presence but also reveals user sensitivity to motion timing and compliance, underscoring the need for more tailored trajectory generation and adaptive force control.
+            Together, these results highlight a broader lesson: physicality is likely not optional but foundational for creating meaningful social–physical interactions with characters in VR. Looking forward, future work will refine ETHOS by tailoring motion strategies to specific gestures, introducing compliance-based contact detection, and enhancing virtual character realism.
           </p>
         </div>
       </div>
